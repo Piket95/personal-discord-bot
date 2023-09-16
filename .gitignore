@@ -3,4 +3,7 @@
 
 # Project
 examples/*
+assets/*
+data/*
+
 .env
