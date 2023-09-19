@@ -1,0 +1,30 @@
+# This workflow will build a docker container, publish it to Google Container Registry, and deploy it to GKE when there is a push to the "main" branch
+
+name: Build and Deploy to personal server
+
+on: workflow_dispatch
+
+jobs:
+  deployment:
+    name: Deploy the project on the self hosted server
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: install ssh keys
+        run: |
+          install -m 600 -D /dev/null ~/.ssh/id_rsa
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+          ssh-keyscan -H ${{ secrets.SSH_HOST }} > ~/.ssh/known_hosts
+
+      - name: connect, pull and run deployment script
+        run: |
+          ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "
+            cd ${{ secrets.WORK_DIR }} &&
+            git checkout ${{ secrets.MAIN_BRANCH }} &&
+            git pull &&
+            ./${{ secrets.DEPLOYMENT_SCRIPT_NAME }} &&
+            exit
+          "
+
+      - name: cleanup
+        run: rm -rf ~/.ssh
