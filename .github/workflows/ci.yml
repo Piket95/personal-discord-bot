@@ -22,7 +22,7 @@ jobs:
             cd ${{ secrets.WORK_DIR }} &&
             git checkout ${{ secrets.MAIN_BRANCH }} &&
             git pull &&
-            ./deployment.sh &&
+            sh ./deployment.sh &&
             exit
           "
 
