@@ -1,0 +1,11 @@
+{
+  "playlistFeeds": [
+    {
+      "name": "",
+      "playlistId": "",
+      "destinationDCChannelId": "",
+      "maxPlaylistResults": 1,
+      "skip": false
+    }
+  ]
+}

@@ -5,5 +5,9 @@
 examples/*
 assets/*
 data/*
+config/*
 
 .env
+
+# Except
+!*.example
