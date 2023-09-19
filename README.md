@@ -13,4 +13,5 @@ Mein eigener persönlicher Discord Bot für Dinge wie z.B.
 ✔️ Dockerfile erstellen, damit ein Python Server automatisch erstellt wird <br>
 ✔️ Mention Rollen (@) hinzufügen, wenn neue YT Videos rauskommen?! Rolle erstellen <br>
 ✔️ composer.yaml für Docker erstellen <br>
-✔️ Deployment Automatisiert mit GitHub Actions
+✔️ Deployment Automatisiert mit GitHub Actions <br>
+❌ Unnötige Statistiken erheben wie z.B. wie viele Messages schon erfolgreich mit dem Bot verschickt wurden für den Anfang (embed in README für Live Statistiken möglich??) <br>
