@@ -1,3 +1,5 @@
+version: "3.9"
+
 services:
   personal-discord-bot-yuri:
     container_name: personal-discord-bot-yuri
