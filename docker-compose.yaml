@@ -4,6 +4,7 @@ services:
   personal-discord-bot-yuri:
     container_name: personal-discord-bot-yuri
     build: .
+    image: piket95/personal-discord-bot-yuri
     volumes:
       - ./volumes/assets:/app/assets
       - ./volumes/config:/app/config
