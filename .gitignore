@@ -6,6 +6,7 @@ examples/*
 assets/*
 data/*
 config/*
+volumes/*
 
 .env
 

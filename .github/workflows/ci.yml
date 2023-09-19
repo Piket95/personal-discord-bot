@@ -1,4 +1,4 @@
-# This workflow will build a docker container, publish it to Google Container Registry, and deploy it to GKE when there is a push to the "main" branch
+# This workflow will fully deploy the project to the self-hosted server when triggered manually
 
 name: Build and Deploy to personal server
 
@@ -22,7 +22,7 @@ jobs:
             cd ${{ secrets.WORK_DIR }} &&
             git checkout ${{ secrets.MAIN_BRANCH }} &&
             git pull &&
-            ./${{ secrets.DEPLOYMENT_SCRIPT_NAME }} &&
+            ./deployment.sh &&
             exit
           "
 

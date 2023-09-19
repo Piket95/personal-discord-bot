@@ -1,10 +1,11 @@
 services:
   personal-discord-bot-yuri:
-    image: PersonalDiscordBot
+    container_name: personal-discord-bot-yuri
+    build: .
     volumes:
-      - xxx/personal-discord-bot-yuri/assets:/app/assets
-      - xxx/personal-discord-bot-yuri/config:/app/config
-      - xxx/personal-discord-bot-yuri/data:/app/data
-      - xxx/personal-discord-bot-yuri/.env:/app/.env
+      - ./volumes/assets:/app/assets
+      - ./volumes/config:/app/config
+      - ./volumes/data:/app/data
+      - ./volumes/.env:/app/.env
 
 # TODO: Volume Pfade fertig ausfüllen, sobald bekannt
