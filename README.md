@@ -20,6 +20,8 @@ Mein eigener persönlicher Discord Bot für Dinge wie z.B.
 ❌ Verschiedene Rollen erstellen, für verschiedene Notfication Gründe
 
 # 
-[![built with Codeium](https://codeium.com/badges/main)](https://codeium.com)
+[![built with Codeium][codium-badge]][codium-url]
 
 [github-ci-workflow]: https://github.com/Piket95/personal-discord-bot/actions/workflows/ci.yml/badge.svg
+[codium-badge]: https://codeium.com/badges/main
+[codium-url]: https://codeium.com
