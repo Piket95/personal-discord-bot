@@ -18,6 +18,8 @@ Mein eigener persönlicher Discord Bot für Dinge wie z.B.
 ❌ Unnötige Statistiken erheben wie z.B. wie viele Messages schon erfolgreich mit dem Bot verschickt wurden für den Anfang (embed in README für Live Statistiken möglich??) <br>
 ❌ Notification wenn DC Bot Crasht o.ä. über NTFY, private DC msg oder Uptime Kuma <br>
 ❌ Verschiedene Rollen erstellen, für verschiedene Notfication Gründe
+❌ Überprüfe Twitch ob es Drops für gewisse (definierbare) Spiele gibt
+❌ Suchen nach Youtube Videos die nicht in Playlisten sind, sonder irgendwo auf dem Kanal
 
 # 
 [![built with Codeium][codium-badge]][codium-url]
