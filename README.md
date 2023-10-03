@@ -1,4 +1,5 @@
-﻿# Personal Discord Bot - by Piket95
+!["Live" Deployment](https://github.com/Piket95/personal-discord-bot/actions/workflows/ci.yml/badge.svg)
+ # Personal Discord Bot - by Piket95
 
 Mein eigener persönlicher Discord Bot für Dinge wie z.B.
 - Benachrichtigungen, wenn neue YouTube-Videos in eine Playlist hochgeladen werden
@@ -15,3 +16,7 @@ Mein eigener persönlicher Discord Bot für Dinge wie z.B.
 ✔️ composer.yaml für Docker erstellen <br>
 ✔️ Deployment Automatisiert mit GitHub Actions <br>
 ❌ Unnötige Statistiken erheben wie z.B. wie viele Messages schon erfolgreich mit dem Bot verschickt wurden für den Anfang (embed in README für Live Statistiken möglich??) <br>
+❌ Wenn Discord Bot Abbricht/Crasht/Fehler wirft, schreibe eine private Nachricht in Discord oder nutze NTFY (needs setup too) oder sogar Uptime Kuma
+
+# 
+[![built with Codeium](https://codeium.com/badges/main)](https://codeium.com)
