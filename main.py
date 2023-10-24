@@ -3,7 +3,7 @@ import os
 import discord
 from dotenv import load_dotenv
 
-from src.discord_bot import DiscordBot
+from discord_bot import DiscordBot
 
 if __name__ == '__main__':
 

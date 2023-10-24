@@ -16,7 +16,7 @@ def load_playlist_config() -> dict:
     playlistConfig = {}
 
     try:
-        with open('../config/yt-video-feeds.json', 'r') as f:
+        with open('config/yt-video-feeds.json', 'r') as f:
             playlistConfig = json.load(f)
     except FileNotFoundError:
         print('\033[91mFehler: Die Config-Datei unter "config/yt-video-feeds.json" fehlt!\033[0m')
@@ -35,7 +35,7 @@ def check_for_new_yt_videos():
 
     # get saved yt video id from saved json file or set predefined layout if file doesn't exist
     try:
-        with open('../data/saved_yt_video_id.json', 'r') as f:
+        with open('data/saved_yt_video_id.json', 'r') as f:
             savedJsonData = json.load(f)
     except Exception as error:
         if not isinstance(error, FileNotFoundError):
@@ -98,7 +98,7 @@ def check_for_new_yt_videos():
                     'videoDate': formattedVideoDate
                 })
 
-    with open('../data/saved_yt_video_id.json', 'w') as f:
+    with open('data/saved_yt_video_id.json', 'w') as f:
         f.write(json.dumps(savedJsonData, indent=4))
 
     return messageObj
