@@ -5,10 +5,9 @@ services:
     container_name: personal-discord-bot-yuri
     build: .
     image: piket95/personal-discord-bot-yuri
+    restart: unless-stopped
     volumes:
       - ./volumes/assets:/app/assets
       - ./volumes/config:/app/config
       - ./volumes/data:/app/data
       - ./volumes/.env:/app/.env
-
-# TODO: Volume Pfade fertig ausfüllen, sobald bekannt
