@@ -1,4 +1,4 @@
-!["Live" Deployment][github-ci-workflow] ![Uptime Kuma Status][uptime-kuma-status]
+[!["Live" Deployment][github-ci-workflow]](#) [![Uptime Kuma Status][uptime-kuma-status]](#)
  # Personal Discord Bot
 
 Mein eigener persönlicher Discord Bot für Dinge wie z.B.
