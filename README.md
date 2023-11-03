@@ -1,4 +1,4 @@
-!["Live" Deployment][github-ci-workflow]
+!["Live" Deployment][github-ci-workflow] ![Uptime Kuma Status][uptime-kuma-status]
  # Personal Discord Bot
 
 Mein eigener persönlicher Discord Bot für Dinge wie z.B.
@@ -28,3 +28,4 @@ Mein eigener persönlicher Discord Bot für Dinge wie z.B.
 [github-ci-workflow]: https://github.com/Piket95/personal-discord-bot/actions/workflows/ci.yml/badge.svg
 [codium-badge]: https://codeium.com/badges/main
 [codium-url]: https://codeium.com
+[uptime-kuma-status]: https://kuma.dennisadam.de/api/badge/4/status?upLabel=Running/Online&downLabel=Offline
