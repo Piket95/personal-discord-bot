@@ -14,12 +14,12 @@ Mein eigener persönlicher Discord Bot für Dinge wie z.B.
 ✔️ Dockerfile erstellen, damit ein Python Server automatisch erstellt wird <br>
 ✔️ Mention Rollen (@) hinzufügen, wenn neue YT Videos rauskommen?! <br>
 ✔️ composer.yaml für Docker erstellen <br>
-✔️ Deployment Automatisiert mit GitHub Actions <br>
+✔️ Deployment automatisieren mit GitHub Actions <br>
 ✔️ Notification wenn DC Bot Crasht o.ä. über NTFY, private DC msg oder Uptime Kuma <br>
 ❌ Unnötige Statistiken erheben wie z.B. wie viele Messages schon erfolgreich mit dem Bot verschickt wurden für den Anfang (embed in README für Live Statistiken möglich??) <br>
 ❌ Verschiedene Rollen erstellen, für verschiedene Notfication Gründe <br>
 ❌ Überprüfe Twitch ob es Drops für gewisse (definierbare) Spiele gibt <br>
-❌ Suchen nach Youtube Videos die nicht in Playlisten sind, sonder irgendwo auf dem Kanal <br>
+❌ Suchen nach Youtube Videos die nicht in Playlisten sind, sondern irgendwo auf dem Kanal <br>
 ❌ Simple Webui um configrationen zu erstellen, ändern, einzusehen (z.B. welche Playlists abgefragt werden sollen) <br>
 
 # 
