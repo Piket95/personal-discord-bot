@@ -21,6 +21,7 @@ Mein eigener persönlicher Discord Bot für Dinge wie z.B.
 ❌ Überprüfe Twitch ob es Drops für gewisse (definierbare) Spiele gibt <br>
 ❌ Suchen nach Youtube Videos die nicht in Playlisten sind, sondern irgendwo auf dem Kanal <br>
 ❌ Simple Webui um configrationen zu erstellen, ändern, einzusehen (z.B. welche Playlists abgefragt werden sollen) <br>
+❌ Livestream "Playlist" auf YouTube scannbar machen wenn möglich <br>
 
 # 
 [![built with Codeium][codium-badge]][codium-url]
