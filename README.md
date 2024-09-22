@@ -26,7 +26,7 @@ Mein eigener persönlicher Discord Bot für Dinge wie z.B.
 # 
 [![built with Codeium][codium-badge]][codium-url]
 
-[github-ci-workflow]: https://github.com/Piket95/personal-discord-bot/actions/workflows/ci.yml/badge.svg
+[github-ci-workflow]: https://github.com/Piket95/personal-discord-bot/actions/workflows/cd.yml/badge.svg
 [codium-badge]: https://codeium.com/badges/main
 [codium-url]: https://codeium.com
 [uptime-kuma-status]: https://kuma.dennisadam.de/api/badge/4/status?upLabel=Running/Online&downLabel=Offline
