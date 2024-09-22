@@ -1,4 +1,5 @@
 from datetime import datetime
+import os
 
 import discord
 import pytz
@@ -36,7 +37,11 @@ class DiscordBot(discord.Client):
                 text = (f'||{ rolesToPing }||\nNeue Sondersendung vom **{ message["videoDate"] } '
                            f'Uhr** aus der Playlist "{ message["playlistName"] }"\n{ message["url"] }')
 
-                destDCChannel = self.get_channel(int(message['destDCChannelId']))
+                if os.getenv('ENV') is 'prod':
+                    destDCChannel = self.get_channel(int(message['destDCChannelId']))
+                else:
+                    destDCChannel = self.get_channel(int(os.getenv('BOT_TEST_CHANNEL_ID')))
+
                 await destDCChannel.send(text)
 
     @check_for_new_yt_videos.before_loop
