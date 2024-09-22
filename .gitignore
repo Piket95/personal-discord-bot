@@ -3,6 +3,7 @@
 .vscode
 
 # Project
+__pycache__
 examples/*
 assets/*
 data/*
