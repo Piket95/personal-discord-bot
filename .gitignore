@@ -1,5 +1,6 @@
 # IDE
 .idea
+.vscode
 
 # Project
 examples/*
@@ -7,6 +8,8 @@ assets/*
 data/*
 config/*
 volumes/*
+.venv/
+.venv-3.12.2/
 
 .env
 
