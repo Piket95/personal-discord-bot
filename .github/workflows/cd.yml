@@ -1,5 +1,8 @@
 # This workflow will fully deploy the project to the self-hosted server when triggered manually
 
+# Notes:
+# -o StrictHostKeyChecking=no prevents asking for ED25519 key fingerprint confirmation when connecting to the server via ssh (previous ssh-keyscan command not necessary anymore because of this)
+
 name: Build and Deploy to personal server
 
 on: workflow_dispatch
@@ -14,17 +17,14 @@ jobs:
         run: |
           install -m 600 -D /dev/null ~/.ssh/id_rsa
           echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
-          ssh-keyscan -H ${{ secrets.SSH_HOST }} > ~/.ssh/known_hosts
-
       - name: connect, pull and run deployment script
         run: |
-          ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "
+          ssh -p ${{ secrets.SSH_PORT }} -o StrictHostKeyChecking=no ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "
             cd ${{ secrets.WORK_DIR }} &&
             git checkout ${{ secrets.MAIN_BRANCH }} &&
             git pull &&
             sh ./deployment.sh &&
             exit
           "
-
       - name: cleanup
         run: rm -rf ~/.ssh
