@@ -6,7 +6,7 @@ Mein eigener persönlicher Discord Bot für Dinge wie z.B.
 - Wenn irgendwo neue, wichtige oder interessante News gepostet werden
 - weitere Ideen folgen ...
 
-## TODOs / Simple Roadmap (✔️|❌)
+## TODOs / Simple Roadmap (✔️|⚙️|❌)
 
 ✔️ Youtube API implementieren <br>
 ✔️ Discord verknüpfen und einen Bot draus machen <br>
